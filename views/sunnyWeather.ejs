@@ -1,0 +1,12 @@
+<h1>Sunny Day(s) for <%=city%> are:</h1>
+<% for(let ctr = 0; ctr < sunnyDays.length; ctr++)
+{%>
+    <h2><%= sunnyDays[ctr].day%></h2>
+    <p>Feels Like: <%= sunnyDays[ctr].feelsLike%></p>
+    <p>Night: <%= sunnyDays[ctr].night%></p>
+    <p>POP: <%= sunnyDays[ctr].POP%></p>
+    <p>Wind: <%= sunnyDays[ctr].wind%></p>
+    <p>Wind gust(km/h) <%= sunnyDays[ctr].wind_gust%></p>
+    <p>Hrs of Sun: <%= sunnyDays[ctr].hrs_of_sun%></p>
+    <p>24 Hrs of Rain: <%= sunnyDays[ctr].hr_rain%></p>
+<%}%>

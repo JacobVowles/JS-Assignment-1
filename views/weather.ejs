@@ -1,0 +1,48 @@
+
+<% for(let ctr = 0; ctr < all.length;  ctr++)
+{%>
+    <h2><%= all[ctr]%></h2>
+    <% if(all[ctr] === "Kingston")
+        {
+         for(let ctr = 0; ctr < kingstonWeather.length; ctr++)
+        {%>
+            <h4><%=weekdays[ctr]%></h4>
+            <p>Feels Like: <%=kingstonWeather[ctr].feelsLike%></p>
+            <p>Night: <%=kingstonWeather[ctr].night%></p>
+            <p>POP: <%=kingstonWeather[ctr].POP%></p>
+            <p>Wind: <%=kingstonWeather[ctr].wind%></p>
+            <p>Wind gust(km/h) <%=kingstonWeather[ctr].wind_gust%></p>
+            <p>Hrs of Sun: <%=kingstonWeather[ctr].hrs_of_sun%></p>
+            <p>Hrs of Rain: <%=kingstonWeather[ctr].hr_rain%></p>
+        <%}
+    }%>
+    <% if(all[ctr] === "Cornwall")
+        {
+         for(let ctr = 0; ctr < cornwallWeather.length; ctr++)
+        {%>
+            <h4><%=weekdays[ctr]%></h4>
+            <p>Feels like: <%=cornwallWeather[ctr].feelsLike%></p>
+            <p>Night: <%=cornwallWeather[ctr].night%></p>
+            <p>POP: <%=cornwallWeather[ctr].POP%></p>
+            <p>Wind: <%=cornwallWeather[ctr].wind%></p>
+            <p>Wind gust(km/h) <%=cornwallWeather[ctr].wind_gust%></p>
+            <p>Hrs of Sun: <%=cornwallWeather[ctr].hrs_of_sun%></p>
+            <p>Hrs of Rain: <%=cornwallWeather[ctr].hr_rain%></p>
+        <%}
+    }%>
+    <% if(all[ctr] === "Toronto")
+    {
+     for(let ctr = 0; ctr < torontoWeather.length; ctr++)
+    {%>
+        <h4><%=weekdays[ctr]%></h4>
+        <p>Feels Like: <%=torontoWeather[ctr].feelsLike%></p>
+        <p>Night: <%=torontoWeather[ctr].night%></p>
+        <p>POP: <%=torontoWeather[ctr].POP%></p>
+        <p>Wind: <%=torontoWeather[ctr].wind%></p>
+        <p>Wind gust(km/h) <%=torontoWeather[ctr].wind_gust%></p>
+        <p>Hrs of Sun: <%=torontoWeather[ctr].hrs_of_sun%></p>
+        <p>Hrs of Rain: <%=torontoWeather[ctr].hr_rain%></p>
+    <%}
+}%>
+
+<%}%>

@@ -1,0 +1,13 @@
+<h1><%=city%></h1>
+<% for(let ctr = 0; ctr < weekdays.length; ctr++)
+{%>
+    <h3><%=weekdays[ctr]%></h3>
+    <p> Feels like: <%=requestedCityWeather[ctr].feelsLike%></p>
+    <p>Night:  <%=requestedCityWeather[ctr].night%></p>
+    <p>POP: <%=requestedCityWeather[ctr].POP%></p>
+    <p>Wind: <%=requestedCityWeather[ctr].wind%></p>
+    <p>Wind gust(km/h): <%=requestedCityWeather[ctr].wind_gust%></p>
+    <p>Hrs of Sun: <%=requestedCityWeather[ctr].hrs_of_sun%></p>
+    <p>Hrs of Rain: <%=requestedCityWeather[ctr].hr_rain%></p>
+<%}%>
+
